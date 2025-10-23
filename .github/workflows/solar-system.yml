@@ -46,16 +46,18 @@ jobs:
 
     code-coverage:
         name: code-coverage
+        container:
+          image: node:20
         runs-on: ubuntu-latest
         steps:
           - name: Checkout Repository
             uses: actions/checkout@v4
           
-          - name: Setup NodeJS Version
-            uses: actions/setup-node@v4
-            with:
-              node-version: 18
-          
+       #   - name: Setup NodeJS Version
+       #     uses: actions/setup-node@v4
+       #     with:
+       #       node-version: 18
+
           - name: Install NodeJS dependencies
             run: npm install
 
