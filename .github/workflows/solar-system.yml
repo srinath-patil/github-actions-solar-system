@@ -102,9 +102,6 @@ jobs:
         needs: docker
         environment: development
         steps:
-          - name: Checkout Repository
-            uses: actions/checkout@v4
-
           - name: Install kubernetes Cluster
             uses: helm/kind-action@v1
           - run: |
