@@ -3,7 +3,7 @@ on:
   workflow_call:
     inputs:
       ingress-url:
-        description: 'Provide the ingress URL'
+        description: 'Provide the Ingress URL'
         required: true
         type: string
 jobs:
